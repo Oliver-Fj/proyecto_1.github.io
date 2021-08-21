@@ -1,0 +1,61 @@
+/* ==============
+     SECCION INTRO 
+     ============== */
+.intro {
+  position: relative;
+  padding: 0;
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 45px;
+    text-shadow: 3px 3px 10px rgb(32, 30, 30);
+    animation: fadeIn linear 4s;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  h2 {
+    position: absolute;
+    max-width: 365px;
+    bottom: 5%;
+    left: 50px;
+    background-color: rgba(114, 153, 254, 0.7);
+    padding: 16px;
+    font-size: 2.9rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  @media (max-width: 360px) {
+    h1 {
+      top: 10px;
+      text-align: left;
+      left: 10px;
+      font-size: 2.9rem;
+    }
+
+    h2 {
+      max-width: 100%;
+      padding: 5px;
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 10px auto;
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,428 @@
+/* IMPORTS */
+/* =================
+   REGLAS GENERALES 
+   ================= */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Esta es la posicion correcta para utilizar el porcantaje con REM  */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 5.4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+article {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+p,
+input,
+textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input,
+textarea,
+button {
+  font-size: 1.4rem;
+  border: none;
+  padding: 20px;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  color: #fff;
+  background-color: #233451;
+  width: 180px;
+  font-weight: 700;
+}
+
+button:hover {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #233451;
+  }
+  100% {
+    background-color: #5956e7;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #233451;
+  }
+  100% {
+    background-color: #5956e7;
+  }
+}
+
+/* ========== 
+     RESPONSIVE
+     ========== */
+@media (max-width: 360px) {
+  /* GLOBALES */
+  section {
+    padding: 30px 0;
+    overflow: hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+/* ==============
+     SECCION INTRO 
+     ============== */
+.intro {
+  position: relative;
+  padding: 0;
+}
+
+.intro h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 45px;
+  text-shadow: 3px 3px 10px #201e1e;
+  -webkit-animation: fadeIn linear 4s;
+          animation: fadeIn linear 4s;
+}
+
+.intro img {
+  width: 100%;
+  display: block;
+}
+
+.intro h2 {
+  position: absolute;
+  max-width: 365px;
+  bottom: 5%;
+  left: 50px;
+  background-color: rgba(114, 153, 254, 0.7);
+  padding: 16px;
+  font-size: 2.9rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (max-width: 360px) {
+  .intro h1 {
+    top: 10px;
+    text-align: left;
+    left: 10px;
+    font-size: 2.9rem;
+  }
+  .intro h2 {
+    max-width: 100%;
+    padding: 5px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px auto;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ==================
+     SECCION MY SKILLS 
+     ================== */
+.skills {
+  background-color: #7299FE;
+}
+
+.skills p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 25px 0 5px;
+}
+
+.grid-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+.grid-skills .skill {
+  width: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 360px) {
+  .grid-skills .skill {
+    width: 100%;
+    padding: 0;
+  }
+  .grid-skills .skill p {
+    padding: 15px 0 5px;
+  }
+}
+
+.progress {
+  background-color: #fff;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.progress span {
+  background-color: #000;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 80%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 80%;
+  }
+}
+
+/* ==================
+     SECCION SERVICIOS 
+     ================== */
+.servicios {
+  background-color: #FB7171;
+}
+
+.grid-servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+.grid-servicios h3 {
+  margin-top: 10px;
+}
+
+.grid-servicios img {
+  width: auto;
+}
+
+.grid-servicios .servicio {
+  width: 33.33333%;
+}
+
+.grid-servicios .servicio__name {
+  margin-top: 10px;
+}
+
+.grid-servicios .servicio__image {
+  width: auto;
+}
+
+@media (max-width: 360px) {
+  .grid-servicios .servicio {
+    width: 100%;
+  }
+}
+
+/* ===================
+     SECCION PROTAFOLIO 
+     =================== */
+.portafolio {
+  background-color: #FFD233;
+}
+
+.grid-portafolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+.grid-portafolio figure {
+  width: 25%;
+  padding: 10px;
+}
+
+.grid-portafolio figure img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 360px) {
+  .grid-portafolio figure {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* =================
+     SECCION CLIENTES 
+     ================= */
+.clientes {
+  background-color: #3F4E62;
+}
+
+.clientes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.clientes div figure {
+  background-color: #fff;
+  border: 10px solid #fff;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 360px) {
+  .clientes img {
+    width: 100%;
+    margin: auto;
+  }
+  .clientes div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clientes div figure {
+    margin: 20px;
+    height: auto;
+  }
+}
+
+/* ==================
+     SECCION CONTACTO 
+     ================== */
+.contacto {
+  background-color: #16A085;
+}
+
+.grid-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+.grid-contacto div {
+  width: 50%;
+  padding: 10px;
+}
+
+.grid-contacto div:nth-last-of-type(-n + 2) {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .grid-contacto div {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

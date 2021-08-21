@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Portafolio Codigo</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+    <section class="intro">
+        <h1>codiGO</h1>
+        <figure>
+            <img src="./images/image.png" alt="" />
+        </figure>
+        <h2>Hola, mi nombre es Yerson Oliver Felix Perez</h2>
+    </section>
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="grid-skills">
+            <div class="skill">
+                <p>Html</p>
+                <div class="progress"><span style="width: 95%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Javascript</p>
+                <div class="progress"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Css</p>
+                <div class="progress"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill">
+                <p>React</p>
+                <div class="progress"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Angular</p>
+                <div class="progress"><span style="width: 70%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress"><span style="width: 65%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Figma</p>
+                <div class="progress"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill">
+                <p>Node.js</p>
+                <div class="progress"><span style="width: 75%"></span></div>
+            </div>
+        </div>
+    </section>
+    <section class="servicios">
+        <h2>Servicios</h2>
+        <div class="grid-servicios">
+            <article class="servicio">
+                <img src="./images/Vector.png" alt="Servicio" />
+                <h3>Diseño Web</h3>
+            </article>
+            <article class="servicio">
+                <img src="./images/Vector.png" alt="Servicio" />
+                <h3>Desarrollo Web</h3>
+            </article>
+            <article class="servicio">
+                <img src="./images/Vector.png" alt="Servicio" />
+                <h3>Desarrollo Mobile</h3>
+            </article>
+            <article class="servicio">
+                <img class="servicio__image" src="./images/Vector.png" alt="Servicio" />
+                <h3 class="servicio__name">Diseño UI</h3>
+            </article>
+            <article class="servicio">
+                <img src="./images/Vector.png" alt="Servicio" />
+                <h3>Diseño UX</h3>
+            </article>
+            <article class="servicio">
+                <img src="./images/Vector.png" alt="Servicio" />
+                <h3>Metodologías Agiles</h3>
+            </article>
+        </div>
+    </section>
+    <section class="portafolio">
+        <h2>Portafolio</h2>
+        <div class="grid-portafolio">
+            <figure>
+                <img src="./images/image (1).png" alt="Portafolio 1" />
+            </figure>
+            <figure>
+                <img src="./images/image (2).png" alt="Portafolio 2" />
+            </figure>
+            <figure>
+                <img src="./images/image (3).png" alt="Portafolio 3" />
+            </figure>
+            <figure>
+                <img src="./images/image (4).png" alt="Portafolio 4" />
+            </figure>
+            <figure>
+                <img src="./images/image (5).png" alt="Portafolio 5" />
+            </figure>
+            <figure>
+                <img src="./images/image (6).png" alt="Portafolio 6" />
+            </figure>
+            <figure>
+                <img src="./images/image (7).png" alt="Portafolio 7" />
+            </figure>
+            <figure>
+                <img src="./images/image (8).png" alt="Portafolio 8" />
+            </figure>
+        </div>
+    </section>
+    <section class="clientes">
+        <h2>Clientes</h2>
+        <div>
+            <figure><img src="./images/image (9).png" alt="Cliente 1" /></figure>
+            <figure><img src="./images/image (10).png" alt="Cliente 2" /></figure>
+            <figure><img src="./images/image (11).png" alt="Cliente 3" /></figure>
+            <figure><img src="./images/image (12).png" alt="Cliente 4" /></figure>
+        </div>
+    </section>
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="post">
+            <div class="grid-contacto">
+                <div>
+                    <input id="name" name="name" type="text" placeholder="Nombre" required />
+                </div>
+                <div>
+                    <input id="apellido" name="apellido" type="text" placeholder="Apellido" required />
+                </div>
+                <div>
+                    <input id="email" name="email" type="email" placeholder="Email" required />
+                </div>
+                <div>
+                    <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" pattern="[0-9]{9}"
+                        required />
+                </div>
+                <div>
+                    <textarea id="descripcion" name="descripcion" placeholder="Descripción" rows="10"
+                        required></textarea>
+                </div>
+                <div>
+                    <button id="enviar" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+<script src="./scripts/main.js"></script>
+
+</html>

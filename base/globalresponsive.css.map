@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;kBAEkB;AAClB,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,cAAc;EACd,AAAA,OAAO,CAAC;IACN,OAAO,EAAE,MAAM;IACf,QAAQ,EAAE,MAAM;GACjB;EAED,AAAA,EAAE;EACF,EAAE;EACF,EAAE,CAAC;IACD,aAAa,EAAE,IAAI;GACpB;EAED,AAAA,EAAE,CAAC;IACD,SAAS,EAAE,IAAI;GAChB;EAED,AAAA,MAAM,CAAC;IACL,KAAK,EAAE,IAAI;GACZ",
+    "sources": [
+        "globalResponsive.scss"
+    ],
+    "names": [],
+    "file": "globalResponsive.css"
+}

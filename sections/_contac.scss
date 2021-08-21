@@ -1,0 +1,26 @@
+/* ==================
+     SECCION CONTACTO 
+     ================== */
+
+.contacto {
+  background-color: $background-color-contacto;
+}
+
+.grid-contacto {
+  @include grid($section-container-width);
+
+  div {
+    width: get-grid-percentage($grid-items-contact);
+    padding: 10px;
+    &:nth-last-of-type(-n + 2) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 360px) {
+    div {
+      width: 100%;
+    }
+  }
+}

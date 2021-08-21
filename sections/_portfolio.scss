@@ -1,0 +1,28 @@
+/* ===================
+     SECCION PROTAFOLIO 
+     =================== */
+
+.portafolio {
+  background-color: $background-color-portafolio;
+}
+
+.grid-portafolio {
+  @include grid($section-container-width);
+
+  figure {
+    width: get-grid-percentage($grid-items-portfolio) ;
+    padding: 10px;
+    img:hover {
+        transform: scale(1.2, 1.2);
+        transition: 0.5s ease-in-out;
+      }
+  }
+
+  @media (max-width: 360px) {
+    figure {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+}
